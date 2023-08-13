@@ -19,6 +19,8 @@ Check [The Mini Project 2 requirements file](https://github.com/Hesham-Hesham/St
 ### 1. Unlayered
 This version is **built from a single main.c file and is not based on a layered architecture**.
 
+<br/><br/>
+
 ### 2. V1_Layered
 ![V1 Layered](https://github.com/Hesham-Hesham/Stopwatch-Embedded-System-ATmega32/assets/91581641/69252647-b255-429d-a218-ed7648238a3f)
 
@@ -26,7 +28,7 @@ This version is similar to the unlayered version but the difference is that it's
  - Six Common Anode 7-segment displays
  - 7447 BCD-to-7-segment decoder
 
-
+<br/><br/>
 
 ### 3. V2_Layered
 
