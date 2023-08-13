@@ -76,7 +76,7 @@ The project utilizes the following components:
 
 ---
 
-This project is was made during the Full Embedded Systems Diploma under supervision of Engineer Mohamed Tarek.
+This project's unlayered version was made during the Full Embedded Systems Diploma under the supervision of Engineer Mohamed Tarek.
 
 ---
 
