@@ -5,25 +5,30 @@ This repository contains the implementation of a Stopwatch system using the ATme
 ## Table of Contents
 
 - [Requirements](#requirements)
+- [Released Versions](#released-versions)
 - [Components](#components)
 - [Circuit Diagram](#circuit-diagram)
+- [Usage](#usage)
 
-
+---
 ## Requirements
+Check the requirements file
 
-To implement the Stopwatch system, the following requirements were fulfilled:
+---
+## Released Versions
+### 1. Unlayered
+This version is **built from a single main.c file and is not based on a layered architecture**.
 
-1. Use of ATmega32 Microcontroller with a frequency of 1MHz.
-2. Configuration of Timer1 in ATmega32 with CTC mode for time counting.
-3. Utilization of six Common Anode 7-segment displays.
-4. Multiplexed display technique using a 7447 decoder for all 7-segments and NPN BJT transistors for enable/disable control.
-5. Implementation of Multiplexing to display one 7-segment at a time, creating a persistent visual display.
-6. Connection of the first 4-pins of PORTC to the 7447 decoder and first 6-pins of PORTA for enable/disable control of the six 7-segments.
-7. Automatic start of Stopwatch counting upon power connection to the MCU.
-8. Configuration of External Interrupt INT0 with a falling edge to reset the Stopwatch time using a push button with internal pull-up resistor.
-9. Configuration of External Interrupt INT1 with a rising edge to pause the Stopwatch time using a push button with an external pull-down resistor.
-10. Configuration of External Interrupt INT2 with a falling edge to resume the Stopwatch time using a push button with internal pull-up resistor.
+### 2. V1_Layered
+This version is similar to the unlayered version but the difference is that it's **based on a layered architecture model** using the default hardware components which are:
+- Six Common Anode 7-segment displays
+- 7447 BCD-to-7-segment decoder
 
+### 3. V2_Layered
+
+This version is also built from a layered architecture model but it **uses an LCD instead of thes six common anode 7-segment displays**.
+
+---
 ## Components
 
 The project utilizes the following components:
@@ -33,14 +38,20 @@ The project utilizes the following components:
 - 7447 BCD-to-7-segment decoder
 - NPN BJT transistors
 - Push buttons (with internal pull-up and external pull-down resistors)
-- External crystal oscillator (1MHz)
-- Capacitors and resistors as required for circuit stability
+- LCD
+
+---
 
 ## Circuit Diagram
 
+![image](https://github.com/Hesham-Hesham/Stopwatch-Embedded-System-ATmega32/assets/91581641/812a2a99-1174-4787-ab65-279767595fac)
+
+
+---
 
 ## Usage
-
+- ### Hardware target
+    In order to run the code on a real hardware target (ARmega32), follow these steps:
 1. **Setup**: Connect the components as per the circuit diagram.
 2. **Compile**: Use an appropriate compiler (e.g., AVR GCC) to compile the provided source code.
 3. **Program**: Program the ATmega32 Microcontroller with the compiled binary using a suitable programmer (e.g., AVR ISP).
@@ -50,4 +61,15 @@ The project utilizes the following components:
    - Press the pause button (connected to INT1) to pause the Stopwatch time.
    - Press the resume button (connected to INT2) to resume the Stopwatch time.
 
+- ### Simulation
+1.  **Setup**: Install proteus 8 professional v10.0 or higher
+2. **Install Add-ons**: Add the necessary arduino and avr add-ons (Arduino_Proteus_Libraries)
+3. **Run**: Run the .pdsprj file in the /Proteus Simulation folder in any of the versions 
 
+---
+
+This project is was made during the Full Embedded Systems Diploma under supervision of Engineer Mohamed Tarek.
+
+---
+
+*Note: This README provides an overview of the project and its requirements. For detailed implementation and code, please refer to the source files provided in this repository.*
