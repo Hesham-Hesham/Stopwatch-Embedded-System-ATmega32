@@ -1,4 +1,4 @@
-# Stopwatch System using ATmega32 Microcontroller
+# Stopwatch  Embedded System - ATmega32
 
 This repository contains the implementation of a Stopwatch system using the ATmega32 Microcontroller. The Stopwatch is designed to count time using Timer1 in CTC mode and display the elapsed time on six Common Anode 7-segment displays. The project utilizes multiplexing techniques to control the displays and includes features such as start, pause, reset, and resume using external interrupts.
 
