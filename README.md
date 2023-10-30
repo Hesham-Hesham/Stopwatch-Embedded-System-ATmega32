@@ -8,6 +8,7 @@ This repository contains the implementation of a Stopwatch system using the ATme
 - [Released Versions](#released-versions)
 - [Components](#components)
 - [Circuit Diagram](#circuit-diagram)
+- [Working Video](#working-video)
 - [Usage](#usage)
 
 ---
@@ -57,6 +58,14 @@ The project utilizes the following components:
 
 
 ---
+
+## Working Video
+
+
+
+https://github.com/Hesham-Hesham/Stopwatch-Embedded-System-ATmega32/assets/91581641/ce220ae2-1643-444d-a47b-30458379e8a2
+
+
 
 ## Usage
 - ### Hardware target
